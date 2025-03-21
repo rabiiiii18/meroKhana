@@ -83,7 +83,7 @@ const Footer = () => {
         </p>
         <img
           className="ml-3 w-40 h-14 my-auto"
-          src="/public/loogoo.png"
+          src="/public/logoo.png"
           alt="Logo"
         />
       </div>
