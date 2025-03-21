@@ -56,7 +56,7 @@ const Header = () => {
         <img
           onClick={() => navigate("/")}
           className="w-32 h-12 cursor-pointer"
-          src="/public/loogoo.png"
+          src="/public/logoo.png"
           alt="Logo"
         />
         
