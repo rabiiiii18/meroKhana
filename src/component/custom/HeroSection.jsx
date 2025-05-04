@@ -9,14 +9,14 @@ const HeroSection = () => {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8,delay:0.3 }}
         viewport={{ once: true }}
-        className="min-h-[50vh] sm:min-h-[60vh] md:min-h-[70vh] lg:h-[75vh] rounded-xl mt-[5%] select-none relative p-4 sm:p-8"
+        className="min-h-[35vh] sm:min-h-[60vh] md:min-h-[70vh] lg:h-[75vh] rounded-xl mt-[5%] select-none relative sm:p-8"
         style={{
           backgroundImage: "url('/search-hero2.jpg')",
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "contain",
         }}
       >
-        <div className="absolute right-0 top-[10%] w-[90%] sm:w-[80%] md:w-[60%] lg:w-[45%] mr-4 sm:mr-10">
+        <div className="absolute right-0 lg:top-[10%] top-[6%] w-[90%] sm:w-[80%] md:w-[60%] lg:w-[45%] mr-4 sm:mr-10">
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}

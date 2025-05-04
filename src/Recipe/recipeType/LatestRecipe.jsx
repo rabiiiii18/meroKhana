@@ -26,22 +26,22 @@ const LatestRecipe = () => {
     navigate(`/recipe/${formattedName}`);
   };
 
-  useEffect(() => {
-    fetch("/Object/recipe.json")
-      .then((res) => res.json())
-      .then((data) => {
-        const latest = data.sort((a, b) => {
-          const dateA = new Date(a.createdAt);
-          const dateB = new Date(b.createdAt);
-          return dateB - dateA;
-        });
-        const latestRecipe=latest.slice(0,10)
-        setRecipe(latestRecipe);
-      })
-      .catch((error) => {
-        console.error("Error fetching recipes:", error);
-      });
-  });
+  // useEffect(() => {
+  //   fetch("/Object/recipe.json")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       const latest = data.sort((a, b) => {
+  //         const dateA = new Date(a.createdAt);
+  //         const dateB = new Date(b.createdAt);
+  //         return dateB - dateA;
+  //       });
+  //       const latestRecipe=latest.slice(0,10)
+  //       setRecipe(latestRecipe);
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error fetching recipes:", error);
+  //     });
+  // });
 
   return (
     <div>

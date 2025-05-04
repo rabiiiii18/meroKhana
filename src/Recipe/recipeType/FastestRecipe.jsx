@@ -20,26 +20,26 @@ const FastestRecipe = () => {
   const slidesPerView = Math.min(recipe.length, 5);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    fetch("/Object/recipe.json")
-      .then((res) => res.json())
-      .then((data) => {
-        const filteredRecipes = data.filter((recipe) => {
-          const timeString = recipe.time.toLowerCase();
-          let totalMinutes = 0;
+  // useEffect(() => {
+  //   fetch("/Object/recipe.json")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       const filteredRecipes = data.filter((recipe) => {
+  //         const timeString = recipe.time.toLowerCase();
+  //         let totalMinutes = 0;
 
-          if (timeString.includes("hr")) {
-            const hours = parseInt(timeString);
-            totalMinutes = hours * 60;
-          } else if (timeString.includes("min")) {
-            totalMinutes = parseInt(timeString);
-          }
-          return totalMinutes < 20;
-        });
-        setRecipe(filteredRecipes);
-      })
-      .catch((error) => console.error("error", error));
-  });
+  //         if (timeString.includes("hr")) {
+  //           const hours = parseInt(timeString);
+  //           totalMinutes = hours * 60;
+  //         } else if (timeString.includes("min")) {
+  //           totalMinutes = parseInt(timeString);
+  //         }
+  //         return totalMinutes < 20;
+  //       });
+  //       setRecipe(filteredRecipes);
+  //     })
+  //     .catch((error) => console.error("error", error));
+  // });
   
   const handleClick = (name) => {
     const formattedName = encodeURIComponent(name.toLowerCase()); // Format URL
