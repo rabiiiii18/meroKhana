@@ -45,7 +45,7 @@ const LatestRecipe = () => {
 
   return (
     <div>
-      <div className=" mt-20 flex gap-10 overflow-x-auto" >
+      <div className="lg:mt-18 mt-5 flex gap-8 overflow-x-auto" >
           {recipe.map((recipe, index) => (
             <div key={index}>
               <Card recipe={recipe} onClick={() => {
