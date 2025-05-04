@@ -78,7 +78,7 @@ const Carousel = () => {
           <input
             type="text"
             {...register("search", {})}
-            className="pl-[68px] py-3 md:text-[18px] sm:text-[12px] bg-white outline-none rounded-xl w-full shadow-md"
+            className="lg:pl-[68px] pl-[55px] py-3 lg:text-[18px] text-[14px] bg-white outline-none rounded-xl w-full shadow-md"
             placeholder="What do you like to cook today...."
           />
           <Search
