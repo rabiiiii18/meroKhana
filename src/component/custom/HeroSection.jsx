@@ -46,9 +46,9 @@ const HeroSection = () => {
             initial={{ opacity: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{
-              delay: 0.9,
-              duration: 0.2,
-              // ease: "easeInOut",
+              delay: 0.5,
+              duration: 0.5,
+              ease: "easeInOut",
             }}
             viewport={{ once: true }}
             className="px-4 py-3 outline-none cursor-pointer rounded-xl mt-5 sm:mt-[8%] font-semibold bg-white hover:bg-[#E92D28] hover:text-white transition"
