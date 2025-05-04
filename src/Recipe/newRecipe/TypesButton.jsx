@@ -17,7 +17,7 @@ const TypesButton = () => {
         transition={{duration:0.8,dealay:1}}
         viewport={{once:true}}
         
-        className="flex flex-col sm:flex-col md:flex-row items-center gap-3 my-8 select-none">
+        className="flex flex-row sm:flex-col md:flex-row items-center gap-3 my-8 select-none">
           <button
             onClick={() => {
               setisClick("appretizers");
