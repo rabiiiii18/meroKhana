@@ -61,7 +61,7 @@ const Carousel = () => {
         initial={{opacity:0,y:80}}
         animate={{opacity:1,y:0}}
         transition={{ duration: 0.9 }}
-         className="text-[18px] leading-normal text-start text-[#5C5D62] font-normal lg:mt-5 mt-3">
+         className="lg:text-[18px] text-[16px] leading-normal text-start text-[#5C5D62] font-normal lg:mt-5 mt-3">
           Feed your imagination and spark your creativity. From cravings to
           creations, let your ideas flourish and uncover the perfect recipe
           waiting to be discovered.
@@ -83,7 +83,7 @@ const Carousel = () => {
           />
           <Search
             onClick={handleSubmit(onSearchHandle)}
-            className="px-2 py-2 bg-[#E92D28] text-white rounded-md w-[40px] h-[40px] absolute right-4 cursor-pointer"
+            className="px-2 py-2 bg-[#E92D28] text-white rounded-md w-[40px] h-[40px] absolute right-1 cursor-pointer"
           />
         </motion.div>
 
