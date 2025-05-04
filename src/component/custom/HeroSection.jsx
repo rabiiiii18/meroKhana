@@ -33,7 +33,7 @@ const HeroSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ transition: 0.9, delay: 0.8, ease: "easeIn" }}
             viewport={{ once: true }}
-            className="mt-5 sm:mt-7 text-[16px] sm:text-[18px] font-semibold leading-[22px] sm:leading-[25px]"
+            className="mt-5 sm:mt-7 text-[16px] sm:text-[18px] font-semibold leading-[22px] sm:leading-[25px] text-white"
           >
             Discover fresh and easy recipes for every meal. From quick
             breakfasts and light lunches to hearty dinners and indulgent
