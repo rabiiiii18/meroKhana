@@ -36,35 +36,18 @@ const Breads = () => {
       .catch((error) => console.error("error", error));
   });
   return (
-    <div>
-      {" "}
-      <div>
-        <div className=" mt-5">
-          <Swiper
-            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-            spaceBetween={1}
-            slidesPerView={slidesPerView}
-            watchOverflow={true}
-            //   autoplay={{
-            //     delay: 3000,
-            //     disableOnInteraction: false,
-            //   }}
-            pagination={{ clickable: true }}
-          >
-            {recipe.map((recipe, index) => (
-              <SwiperSlide key={index}>
-                <Card
-                  recipe={recipe}
-                  onClick={() => {
-                    handleClick(recipe.title);
-                  }}
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
+    <div className=" mt-5 flex gap-8 overflow-x-auto">
+    {recipe.map((recipe, index) => (
+      <div key={index}>
+        <Card
+          recipe={recipe}
+          onClick={() => {
+            handleClick(recipe.title);
+          }}
+        />
       </div>
-    </div>
+    ))}
+  </div>
   );
 };
 

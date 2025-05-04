@@ -9,7 +9,8 @@ const HeroSection = () => {
         whileInView={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8,delay:0.3 }}
         viewport={{ once: true }}
-        className="min-h-[35vh] sm:min-h-[60vh] md:min-h-[70vh] lg:h-[75vh] rounded-xl mt-[5%] select-none relative sm:p-8"
+        className="min-h-[33vh] sm:min-h-[60vh] md:min-h-[70vh] lg:min-h-[75vh] rounded-xl mt-[5%] select-none relative sm:p-8"
+
         style={{
           backgroundImage: "url('/search-hero2.jpg')",
           backgroundSize: "cover",
@@ -22,7 +23,7 @@ const HeroSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ transition: 0.9, delay: 0.7, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-[50px] font-bold leading-tight sm:leading-snug md:leading-[50px] lg:leading-[60px]"
+            className="text-[22px] sm:text-3xl md:text-4xl lg:text-[50px] font-bold leading-tight sm:leading-snug md:leading-[50px] lg:leading-[60px]"
           >
             Discover fresh and easy recipes to inspire your meals{" "}
             <span className="text-[#E92D28]">every day.</span>
@@ -31,9 +32,9 @@ const HeroSection = () => {
           <motion.p
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ transition: 0.9, delay: 0.8, ease: "easeIn" }}
+            transition={{ transition: 0.4, delay: 0.6, ease: "easeIn" }}
             viewport={{ once: true }}
-            className="mt-5 sm:mt-7 text-[16px] sm:text-[18px] font-semibold leading-[22px] sm:leading-[25px] text-white"
+            className="mt-5 sm:mt-7 text-[16px] lg:text-[18px] lg:font-semibold leading-[22px] sm:leading-[25px] text-white"
           >
             Discover fresh and easy recipes for every meal. From quick
             breakfasts and light lunches to hearty dinners and indulgent

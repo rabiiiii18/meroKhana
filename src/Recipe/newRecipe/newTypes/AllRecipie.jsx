@@ -23,20 +23,10 @@ const AllRecipie = () => {
 
   return (
     <div>
-      <div className="mt-5">
-      <Swiper
-          modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-          spaceBetween={1}
-          slidesPerView={slidesPerView}
-          watchOverflow={true}
-        //   autoplay={{
-        //     delay: 3000,
-        //     disableOnInteraction: false,
-        //   }}
-          pagination={{ clickable: true }}
-        >
+      <div className="mt-5 flex gap-8">
+      
           {images.map((img) => (
-            <SwiperSlide key={img.id}>
+            <div key={img.id}>
               <div className="select-none">
                 <div className="flex gap-2 bg-white w-[65px] px-2 py-1 rounded-2xl select-none absolute left-3 top-3">
                   <span>
@@ -121,9 +111,9 @@ const AllRecipie = () => {
                   </div>
                 </div>
               </div>
-            </SwiperSlide>
+            </div>
           ))}
-        </Swiper>
+      
       </div>
     </div>
   );

@@ -35,18 +35,18 @@ const Carousel = () => {
     >
       <div
         className="absolute sm:top-[15%] md:top-[30%] inset-x-0 ms-[5%] 
-             max-w-[90%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[55%] p-4 "
+             max-w-[90%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[60%] p-4 "
       >
         {/* Heading */}
         <motion.h1
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="text-[26px] sm:text-3xl md:text-4xl lg:text-5xl
+          className="text-[26px] sm:text-3xl md:text-4xl lg:text-6xl
                leading-tight sm:leading-snug md:leading-[50px] lg:leading-[62px] 
                font-extrabold "
         >
-          You don't know how to make <br className="lg:hidden block" />
+          You don't know how to make <br className="block" />
           <ReactTyped
           className="text-[#E92D28] inline-block"
             strings={["Dish you have in mind?", "Let's cook together!"]}
