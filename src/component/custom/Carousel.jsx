@@ -25,7 +25,7 @@ const Carousel = () => {
   } = useForm();
   return (
     <div
-      className="min-h-[50vh] sm:min-h-[60vh] md:min-h-[70vh] lg:min-h-[90vh] rounded-xl flex items-center justify-center p-4"
+      className="min-h-[45vh] sm:min-h-[60vh] md:min-h-[70vh] lg:min-h-[90vh] rounded-xl flex items-center justify-center lg:p-4 p-3"
       style={{
         backgroundImage: "url('/search-hero.jpg')",
         backgroundSize: "cover",
@@ -42,13 +42,13 @@ const Carousel = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[52px] 
+          className="text-[26px] sm:text-3xl md:text-4xl lg:text-5xl
                leading-tight sm:leading-snug md:leading-[50px] lg:leading-[62px] 
-               font-extrabold text-center"
+               font-extrabold "
         >
-          You <span className="text-[#E92D28] inline-block">don't know</span>{" "}
-          how to make <br className="hidden sm:block" />
+          You don't know how to make <br className="lg:hidden block" />
           <ReactTyped
+          className="text-[#E92D28] inline-block"
             strings={["Dish you have in mind?", "Let's cook together!"]}
             typeSpeed={40}
             backSpeed={50}
@@ -61,7 +61,7 @@ const Carousel = () => {
         initial={{opacity:0,y:80}}
         animate={{opacity:1,y:0}}
         transition={{ duration: 0.9 }}
-         className="text-[18px] leading-normal text-start text-[#5C5D62] font-normal mt-5">
+         className="text-[18px] leading-normal text-start text-[#5C5D62] font-normal lg:mt-5 mt-3">
           Feed your imagination and spark your creativity. From cravings to
           creations, let your ideas flourish and uncover the perfect recipe
           waiting to be discovered.
@@ -73,7 +73,7 @@ const Carousel = () => {
         animate={{opacity:1,y:0}}
         transition={{ delay: 0.5,duration:0.9 }}
 
-         className="mt-[52px] flex items-center relative w-full">
+         className="lg:mt-[52px] mt-[20px] flex items-center relative w-full">
           <Utensils className="absolute left-4 text-[#E92D28]" />
           <input
             type="text"
