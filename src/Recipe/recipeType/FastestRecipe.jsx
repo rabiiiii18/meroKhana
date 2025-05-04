@@ -47,52 +47,17 @@ const FastestRecipe = () => {
   };
 
   return (
-    <div className="mt-20">
-      <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-        spaceBetween={1}
-        slidesPerView={slidesPerView}
-        watchOverflow={true}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
-        }}
-        breakpoints={{
-          0: {
-            slidesPerView: 1,
-            // spaceBetween: 10,
-            // centeredSlides:true,
-          },
-          560: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          860: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-          },
-          1160: {
-            slidesPerView: 4,
-            spaceBetween: 20,
-          },
-          1390: {
-            slidesPerView: 5,
-            spaceBetween: 20,
-          },
-        }}
-        pagination={{ clickable: true }}
-      >
-        {recipe.map((recipe, index) => (
-          <SwiperSlide key={index}>
-            <Card
-              recipe={recipe}
-              onClick={() => {
+    <div>
+      <div className="lg:mt-18 mt-5 flex gap-8 overflow-x-auto" >
+          {recipe.map((recipe, index) => (
+            <div key={index}>
+              <Card recipe={recipe} onClick={() => {
                 handleClick(recipe.title);
-              }}
-            />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+              }}/>
+            </div>
+          ))}
+       
+      </div>
     </div>
   );
 };
