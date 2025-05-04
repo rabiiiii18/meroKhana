@@ -13,9 +13,9 @@ const RecipeType = () => {
      whileInView={{opacity:1,y:0}}
      transition={{delay:0.2,duration:0.6}}
      viewport={{ once: true }}
-     className="flex flex-col sm:flex-col md:flex-row justify-center items-center gap-4 sm:gap-8 md:gap-12 lg:gap-[8%] mt-[3%]">
+     className="flex flex-col sm:flex-col md:flex-row justify-center items-center gap-4 sm:gap-8 md:gap-12 lg:gap-[8%] lg:mt-[3%] mt-[6%]">
         <li
-          className={`list-none text-lg sm:text-xl block md:none leading-[31px]  font-bold cursor-pointer 
+          className={`list-none lg:text-[22px] text-[20px] sm:text-xl block md:none leading-[31px]  font-bold cursor-pointer 
                 select-none hover:underline underline-offset-[10px] sm:underline-offset-[20px] 
                 hover:text-[#E92D28] ${
                   type === "latest"
@@ -28,7 +28,7 @@ const RecipeType = () => {
         </li>
 
         <li
-          className={`list-none text-lg sm:text-xl block md:none leading-[31px] font-bold cursor-pointer 
+          className={`list-none lg:text-[22px] text-[20px] smsm:text-xl block md:none leading-[31px] font-bold cursor-pointer 
                 select-none hover:underline underline-offset-[10px] sm:underline-offset-[20px] 
                 hover:text-[#E92D28] ${
                   type === "popular"
@@ -41,7 +41,7 @@ const RecipeType = () => {
         </li>
 
         <li
-          className={`list-none text-lg sm:text-xl block md:none leading-[31px]  font-bold cursor-pointer 
+          className={`list-none lg:text-[22px] text-[20px] sm sm:text-xl block md:none leading-[31px]  font-bold cursor-pointer 
                 select-none hover:underline underline-offset-[10px] sm:underline-offset-[20px] 
                 hover:text-[#E92D28] ${
                   type === "fastest"
