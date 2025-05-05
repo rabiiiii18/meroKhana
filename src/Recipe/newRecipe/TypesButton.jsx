@@ -10,7 +10,7 @@ const TypesButton = () => {
 
   return (
     <div>
-      <div className="flex items-center justify-center">
+      <div className="flex lg:items-center lg:justify-center">
         <motion.div
           initial={{ opacity: 0, y: 60 }}
           whileInView={{ opacity: 1, y: 0 }}

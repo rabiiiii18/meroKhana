@@ -26,17 +26,17 @@ const PopularRecipe = () => {
     navigate(`/recipe/${formattedName}`);
   };
 
-  // useEffect(() => {
-  //   fetch("/Object/recipe.json")
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       const filteredRecipes = data.filter((recipe) => recipe.rating >= 4);
-  //       setRecipe(filteredRecipes);
-  //     })
-  //     .catch((error) => {
-  //       console.error("Error fetching recipes:", error);
-  //     });
-  // }, []);
+  useEffect(() => {
+    fetch("/Object/recipe.json")
+      .then((res) => res.json())
+      .then((data) => {
+        const filteredRecipes = data.filter((recipe) => recipe.rating >= 4);
+        setRecipe(filteredRecipes);
+      })
+      .catch((error) => {
+        console.error("Error fetching recipes:", error);
+      });
+  }, []);
 
   return (
     <div>
